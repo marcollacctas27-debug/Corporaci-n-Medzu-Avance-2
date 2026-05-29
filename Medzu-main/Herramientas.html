@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Medzu es una ferretería especializada en pernos, herramientas y suministros industriales que brinda soluciones confiables para cada proyecto de construcción, adaptándose a tus necesidades técnicas y operativas.
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/styleInventory.css" />
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/scriptInventory.js"></script>
+
+    <title>Medzu Corporation SAC &mdash; Obten todos los pernos!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="medzu logo" src="img/medzu_logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html#how">Como pedir</a></li>
+          <li><a class="main-nav-link" href="index.html#meals">Herramientas</a></li>
+          <li>
+            <a class="main-nav-link" href="index.html#testimonials">Recomendaciones</a>
+          </li>
+                              <li>
+            <a class="main-nav-link" href="Medzu.html">MEDZU SAC</a>
+          </li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Adquiere tus productos</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <body>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Inventory/1.png" alt="">
+                    </div>
+                    <p class="descripcion">CINTA MÉTRICA STANLEY</p>
+                    <span class="precio">S/130</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Inventory/2.png" alt="">
+                    </div>
+                    <p class="descripcion" id>CAJA DE HERRAMIENTAS STANLEY</p>
+                    <span class="precio">S/128.60</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Inventory/3.png" alt="">
+                    </div>
+                    <p class="descripcion">LLAVE INGLESA STANLEY</p>
+                    </p>
+                    <span class="precio">S/61</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Inventory/4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CAJA DE HERRAMIENTAS 3 EN 1 TRUPPER</p>
+                    <span class="precio">S/190</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Inventory/5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">ESMERIL ANGULAR TRUPPER</p>
+                    <span class="precio">S/236</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Inventory/6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">ROTOMARTILLO TRUPPER</p>
+                    <span class="precio">S/145</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Inventory/7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">KIT PARA ELECTRONICA SATA</p>
+                    <span class="precio">S/49.90</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Inventory/8.jpg" alt="">
+                    </div>
+                    <p class="descripcion">JUEGO DE LLAVES SATA</p>
+                    <span class="precio">S/185</span>
+                </div>
+            </div> 
+        </div>
+
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">TOOL MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">1 uni.</option>
+                            <option value="">5 uni.</option>
+                            <option value="">10 uni.</option>
+                            <option value="">Otros</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="medzu logo" src="img/medzu_logo.png" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Hecho por Marco Llacctas
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contactanos</p>
+          <address class="contacts">
+            <p class="address">
+              Asoc. Residencial, Av. Carlos Izaguirre MZ B, San Martín de Porres 15109
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">+51 999 999 999</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@medzusac.com"
+                >medzusac@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Cuenta</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Crear Cuenta</a></li>
+            <li><a class="footer-link" href="#">Ingresar</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Sobre Medzu</a></li>
+            <li><a class="footer-link" href="#">Pedidos</a></li>
+            <li><a class="footer-link" href="#">Marcas</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Recursos</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Directorio de Herramientas </a></li>
+            <li><a class="footer-link" href="#">Centro de Ayuda</a></li>
+            <li><a class="footer-link" href="#">Terminos y Condiciones</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
